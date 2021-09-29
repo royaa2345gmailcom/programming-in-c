@@ -1,0 +1,20 @@
+// Write a program that reads principal amount, rate of interest and time in the main() function. Call a function by passing them which calculates and returns simple interest
+
+#include<stdio.h>
+int main()
+{
+	int amount, time;
+	float rateOfInterest;
+	float simpleinterest(int,int,float);
+	printf("Enter the value amount,time,rateOfInterest : ");
+	scanf("%d%d%f",&amount,&time,&rateOfInterest);
+	float total = simpleinterest(amount,time,rateOfInterest);
+	
+	printf("The simple interest is : %.2f ",total);
+}
+
+float simpleinterest(int amnt, int tim, float rate)
+{
+	float tot = (amnt * tim * rate)/100;
+	return tot;
+}
