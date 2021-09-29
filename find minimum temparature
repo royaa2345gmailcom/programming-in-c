@@ -1,0 +1,27 @@
+/*Write a program that reads temperatures of three consecutive days and passes them to a function. The called function should print which day had minimum temperature. Do not return any value .*/
+#include<stdio.h>
+int main()
+{
+	void temp(int,int,int);
+	int a,b,c;
+	printf("Enter the value of 3 days temparature : ");
+	scanf("%d%d%d",&a,&b,&c);
+	temp(a,b,c);
+	printf("\nFind the minimum temparature");
+}
+
+void temp(int d,int e,int f)
+{
+	if (d<e && d<f)
+	{
+		printf("first one is minimum temparature");
+	}
+	else if (e<d && e<f)
+	{
+		printf("second one is minimum temparature");
+	}
+	else 
+	{
+		printf("third one is minimum temparature");
+	}
+}
